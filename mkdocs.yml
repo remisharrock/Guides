@@ -6,6 +6,15 @@ site_url: https://trash-guides.info/
 repo_url: https://github.com/TRaSH-Guides/Guides
 repo_name: TRaSH-Guides
 
+# ignores absolute warnings we have
+# warns on missing/broken links
+validation:
+  omitted_files: warn
+  not_found: warn
+  absolute_links: ignore
+# fails to build on warnings
+strict: true
+
 copyright: Copyright &copy; 2022 TRaSH
 
 extra:
@@ -56,7 +65,8 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       locale: en
-  #    fallback_to_build_date: false
+      fallback_to_build_date: true
+      enable_creation_date: true
   - awesome-pages
   - glightbox:
       touchNavigation: true
@@ -75,7 +85,7 @@ plugins:
       j2_variable_end_string: "]]"
   - redirects:
       redirect_maps:
-        updates.txt: updates.txt
+        #updates.txt: updates.txt
         discord.md: https://discord.gg/4K2kdvwzFh
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr redirects
@@ -85,6 +95,8 @@ plugins:
         # Sonarr redirects
         Sonarr/sonarr-setup-custom-formats.md: Sonarr/sonarr-setup-quality-profiles.md
         Sonarr/sonarr-setup-custom-formats-anime.md: Sonarr/sonarr-setup-quality-profiles-anime.md
+        Sonarr/Sonarr-Release-Profile-RegEx.md: Sonarr/sonarr-v3-eol.md
+        Sonarr/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-v3-eol.md
         # How to old redirects
         How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
         How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md

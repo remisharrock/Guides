@@ -331,6 +331,15 @@
       }
     },
     {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
       "name": "jennaortega",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -409,6 +418,15 @@
       "required": false,
       "fields": {
         "value": "^(LiGaS)$"
+      }
+    },
+    {
+      "name": "MarkII",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MarkII)$"
       }
     },
     {
@@ -610,12 +628,30 @@
       }
     },
     {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
+      }
+    },
+    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(Scene)$"
+      }
+    },
+    {
+      "name": "ShieldBearer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ShieldBearer)$"
       }
     },
     {
